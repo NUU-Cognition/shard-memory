@@ -1,0 +1,26 @@
+shard-spec: "0.2.0"
+version: "0.1.0"
+name: Memory
+shorthand: mem
+description: Deliberately maintained, progressive-disclosure memory — a curated Memories/ folder with an always-loaded index and on-demand notes that move Active to Log over their lifecycle
+
+dependencies:
+  - source: NUU-Cognition/shard-flint
+
+types:
+  - Memory
+
+folders:
+  - Mesh/Memories
+  - Mesh/Archive/Memories
+
+install:
+  - source: inst-mem-index.md
+    dest: Mesh/Memories/(Memory) INDEX.md
+    mode: once
+  - source: inst-mem-memories_dashboard.md
+    dest: Mesh/(Dashboard) Memories.md
+    mode: once
+  - source: otmp-mem-memory.md
+    dest: "Shards/(Shards) Obsidian Templates/otmp-mem-memory.md"
+    mode: once
