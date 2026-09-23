@@ -1,12 +1,15 @@
 shard-spec: "0.3.0"
 id: 21e885b3-0012-4d66-8b34-a3af2a8dabac
+org: nuu-cognition
+source:
+  id: 8678a67f-2265-40fb-b108-688a6af30957
 version: "0.1.0"
 name: Memory
 shorthand: mem
 description: Deliberately maintained, progressive-disclosure memory — a curated Memories/ folder with an always-loaded index and on-demand notes that move Active to Log over their lifecycle
 
 dependencies:
-  - source: NUU-Cognition/shard-flint
+  "@nuu-cognition/flint": ""
 
 types:
   - Memory
