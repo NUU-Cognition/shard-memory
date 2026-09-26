@@ -30,7 +30,7 @@ The design **borrows the cognitive structure** of mature memory systems (tiered 
 - `Mesh/Memories/(Memory) INDEX.md` (seed index, `inst-mem-index.md`)
 - `Mesh/(Dashboard) Memories.md` (DataviewJS: active vs log, `inst-mem-memories_dashboard.md`)
 - `(Type) Memory (Memory Shard).md` (type definition)
-- Obsidian template `otmp-mem-memory.md`
+- Note template `otmp-mem-memory.md` (Templater)
 
 ## Structure
 

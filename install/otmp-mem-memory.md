@@ -1,9 +1,9 @@
 ---
-id: {{uuid}}
+id: <% crypto.randomUUID() %>
 tags:
   - "#mem/memory"
 state: active
-created: {{date}}
+created: <% tp.date.now("YYYY-MM-DD") %>
 logged:
 superseded-by:
 template: "[[tmp-mem-memory-v0.1]]"
@@ -17,4 +17,4 @@ template: "[[tmp-mem-memory-v0.1]]"
 
 ## Changelog
 
-- {{date}} — Created.
+- <% tp.date.now("YYYY-MM-DD") %> — Created.
