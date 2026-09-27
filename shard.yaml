@@ -1,6 +1,6 @@
-shard-spec: "0.3.0"
+shard-spec: "0.4.0"
+shard: "@nuucognition/memory"
 id: 21e885b3-0012-4d66-8b34-a3af2a8dabac
-org: nuucognition
 source:
   id: 8678a67f-2265-40fb-b108-688a6af30957
 version: "0.1.3"
