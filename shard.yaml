@@ -9,8 +9,7 @@ shorthand: mem
 description: Deliberately maintained, progressive-disclosure memory — a curated Memories/ folder with an always-loaded index and on-demand notes that move Active to Log over their lifecycle
 
 dependencies:
-  - source: NUU-Cognition/shard-flint
-    version: "0.3.0"
+  "@nuucognition/flint": "^0.3"
 
 types:
   - Memory
