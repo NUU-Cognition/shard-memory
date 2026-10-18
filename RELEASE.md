@@ -1,3 +1,7 @@
+# 0.1.5
+
+- One workflow for each mode (NUU Orbh Task 748). `wkfl-mem-consolidate` has `> [!headless]` callouts in its stages, and `init-mem` has a `# Headless` section. `hwkfl-mem-consolidate` and `hinit-mem` are deleted. A headless session loads the shard with `flint shard start mem`.
+
 # 0.1.4
 
 - The dependency on the Flint shard accepts any version (`"@nuucognition/flint": ""`), so the shard works with Flint 0.3.x and with Flint 0.4.0 (NUU Flint Task 1129).

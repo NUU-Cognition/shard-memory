@@ -19,7 +19,7 @@ The design **borrows the cognitive structure** of mature memory systems (tiered 
 | Skill | `dev-sk-mem-log.md` | Transition active → log (the forget); optional `superseded-by` |
 | Skill | `dev-sk-mem-recall.md` | Load the index and disclose matching notes; search logs only on request |
 | Skill | `dev-sk-mem-index.md` | Rebuild `(Memory) INDEX.md` from the active notes on disk |
-| Workflow | `dev-wkfl-mem-consolidate.md` | Periodic curation pass with human review (+ headless `dev-hwkfl-*`) |
+| Workflow | `dev-wkfl-mem-consolidate.md` | Periodic curation pass with human review (in a headless Orbh session: its `> [!headless]` callouts, no human checkpoints) |
 | Template | `dev-tmp-mem-memory-v0.1.md` | The memory note (Active/Log frontmatter + changelog) |
 | Knowledge | `dev-knw-mem-model.md` | The memory model — progressive disclosure, what belongs in memory |
 | Knowledge | `dev-knw-mem-lifecycle.md` | States, dates, changelog, and the operations |
@@ -37,10 +37,9 @@ The design **borrows the cognitive structure** of mature memory systems (tiered 
 ```
 Shards/(Dev Local) Memory/
   shard.yaml                         # Manifest (not prefixed)
-  dev-init-mem.md                    # Init — shard context + loading contract
-  dev-hinit-mem.md                   # Headless init
+  dev-init-mem.md                    # Init — shard context + loading contract (with the # Headless section)
   skills/        dev-sk-mem-{remember,revise,log,recall,index}.md
-  workflows/     dev-wkfl-mem-consolidate.md, dev-hwkfl-mem-consolidate.md
+  workflows/     dev-wkfl-mem-consolidate.md (one workflow for each mode)
   templates/     dev-tmp-mem-memory-v0.1.md
   knowledge/     dev-knw-mem-{model,lifecycle}.md
   install/       type-mem-memory.md, inst-mem-index.md,
