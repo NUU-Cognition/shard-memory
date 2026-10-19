@@ -1,5 +1,7 @@
 ---
 description: "Memory note — an atomic Active/Log memory with an in-note changelog"
+orb:
+  - "@v1/nuucognition/session/17a6a729-0275-4ec6-ae83-70b1340527ff#flint/nuu-orbh"
 ---
 
 # Filename: Mesh/Memories/(Memory) NNN [Topic].md
@@ -19,8 +21,8 @@ state: [active (current, true now, listed in the INDEX)|log (aged-out or histori
 created: [ISO 8601 date the memory first came into existence]
 logged: /* ISO 8601 — ONLY present when state is log; the date it stopped being current */
 superseded-by: /* optional wikilink — only if a newer ACTIVE memory replaced this one: "[[(Memory) NNN Title]]" */
-orbh-sessions:
-  - "[[agent-session-uuid]]"
+orb:
+  - "[the output of flint address me]"
 template: "[[tmp-mem-memory-v0.1]]"
 authors: /* from .flint/identity.json; omit the field entirely if no identity is set */
   - "[[@Person Name]]"

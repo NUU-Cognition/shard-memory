@@ -1,5 +1,7 @@
 ---
 description: "Transition a memory Active to Log — the deliberate forget operation (move, don't delete)"
+orb:
+  - "@v1/nuucognition/session/17a6a729-0275-4ec6-ae83-70b1340527ff#flint/nuu-orbh"
 ---
 
 > [!important] THIS FILE IS AN INSTRUCTION. WHEN REFERENCED IT IS MEANT TO BE TAKEN AS AN ACTION.
@@ -26,7 +28,7 @@ Age an active memory out to `log` when it goes stale or is superseded. This is t
    - If superseded, add `superseded-by: "[[(Memory) NNN <Successor>]]"`. (Plain staleness with no replacement → no `superseded-by`.)
 4. **Append a changelog line:** `- <today> — Logged: <reason>[; superseded by [[...]]].`
 5. **Remove its line from the INDEX** (`(Memory) INDEX.md`) — logs are never indexed or auto-loaded.
-6. **Track it:** append your session id to `orbh-sessions`.
+6. **Track it:** stamp your session in `orb:`: run `flint address me`, and append its `by` address (quoted) to `orb:`. Add nothing only when `orb:` or `orbh-sessions` already has an item that is exactly your `by` address, `@v1/<org>/session/<uuid>`, `[[<uuid>]]`, or your bare `<uuid>`. Old notes keep `orbh-sessions`: never remove it, and add no new item to it. See [[knw-f-artifacts]] § Session Tracking.
 
 /* Only use `flint helper delete "<name>"` for genuinely erroneous notes that should never have
    existed. Stale-but-true history is logged, not deleted. */

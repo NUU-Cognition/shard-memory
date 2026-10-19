@@ -1,5 +1,7 @@
 ---
 description: "Capture a new memory — create an active (or born-as-log) memory note and add it to the INDEX"
+orb:
+  - "@v1/nuucognition/session/17a6a729-0275-4ec6-ae83-70b1340527ff#flint/nuu-orbh"
 ---
 
 > [!important] THIS FILE IS AN INSTRUCTION. WHEN REFERENCED IT IS MEANT TO BE TAKEN AS AN ACTION.
@@ -25,7 +27,8 @@ Capture a durable fact, decision, preference, or convention as a new memory note
    - `state: active` and `created: <today>` for a live fact. For born-as-log, set `state: log`, `created: <today>`, `logged: <today>`.
    - Front-load the essential claim (BLUF), keep it atomic and short.
    - Seed `## Changelog` with `- <today> — Created.` (or `Recorded.` for born-as-log).
-   - Append your session id to `orbh-sessions`; add `authors` from `.flint/identity.json` (omit if none).
+   - Stamp your session in `orb:`: run `flint address me`, and append its `by` address (quoted) to `orb:`. The template has the field. See [[knw-f-artifacts]] § Session Tracking.
+   - Add `authors` from `.flint/identity.json` (omit if none).
 5. **Update the INDEX** (`Mesh/Memories/(Memory) INDEX.md`) — only if the memory is `active`: add one high-scent line linking the note with a description saying *what* it covers and *when* to load it. (Born-as-log notes are NOT indexed.) Keep the INDEX lean.
 
 # Output
